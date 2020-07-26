@@ -29,6 +29,7 @@
 body {
   margin: 0;
   font-family: OpenSans;
+  min-width: 320px;
 }
 
 h1,
@@ -101,6 +102,7 @@ header::before {
 }
 
 .header_text-second-row {
+  display: block;
   margin-top: 18px;
   margin-right: 17px;
   margin-left: 13.7vw;
@@ -200,9 +202,6 @@ header::before {
   .header_text-second-row {
     width: 500px;
     margin-top: 5px;
-    margin-right: 0;
-    margin-left: 0;
-    align-self: flex-end;
   }
 
   /*!download*/
@@ -277,7 +276,7 @@ header::before {
   .header_text-second-row {
     width: 60vw;
     margin-top: 1px;
-    margin-left: 210px;
+    margin-left: 103px;
     padding-left: 20.7%;
     align-self: start;
   }
@@ -314,6 +313,7 @@ header::before {
   max-width: 1920px;
   margin: 0 auto;
 }
+
 .athlets {
   display: flex;
   flex-direction: column;
@@ -340,8 +340,10 @@ header::before {
 .athlets_picture {
   margin: 4px auto 14px;
 }
+
 .connection {
   background-color: #fafafa;
+  padding-bottom: 50px;
 }
 
 .title_number {
@@ -377,10 +379,6 @@ header::before {
   font-size: 24px;
 }
 
-.connection_description {
-  padding-bottom: 50px;
-}
-
 .collaboration {
   background-color: #f5f4f9;
   padding-top: 56px;
@@ -389,10 +387,8 @@ header::before {
 
 .growth {
   background-color: #5e42b0;
-}
-
-.growth_title {
   padding-top: 50px;
+  padding-bottom: 54px;
 }
 
 .title_number-growth {
@@ -416,7 +412,7 @@ header::before {
 }
 
 .growth_description {
-  padding-bottom: 54px;
+
   color: #fff;
 }
 
@@ -440,9 +436,11 @@ header::before {
     right: 56.6%;
     margin: 0;
   }
+
   .connection {
-    margin-top: 27px;
+    margin-top: 29px;
     background-color: #fff;
+    padding-bottom: 19px;
   }
 
   .connection_title {
@@ -473,18 +471,19 @@ header::before {
     padding-left: 38vw;
   }
 
-  .connection_description {
-    padding-bottom: 19px;
-  }
+  .connection_description {}
 
   .collaboration {
     padding-top: 45px;
     padding-bottom: 33px;
   }
 
-  .growth_title {
+  .growth {
     padding-top: 34px;
+    padding-bottom: 33px;
   }
+
+
 
   .title_number-growth {
     font-size: 18px;
@@ -498,7 +497,7 @@ header::before {
 
   .growth_description {
     font-size: 16px;
-    padding-bottom: 33px;
+
     letter-spacing: 0.7px;
   }
 }
@@ -511,11 +510,14 @@ header::before {
   .athlets_title {
     padding-left: 52.4%;
   }
+
   .athlets_picture {
     right: 58.1%;
   }
+
   .connection {
     margin-top: 75px;
+    padding-bottom: 50px;
   }
 
   .article_title-text {
@@ -530,10 +532,6 @@ header::before {
     line-height: 1.5em;
   }
 
-  .connection_description {
-    padding-bottom: 50px;
-  }
-
   .athlets_description {
     padding-left: 52.4%;
   }
@@ -545,13 +543,7 @@ header::before {
 
   .growth {
     width: 100%;
-  }
-
-  .growth_title {
     padding-top: 50px;
-  }
-
-  .growth_description {
     padding-bottom: 47px;
   }
 
@@ -571,6 +563,7 @@ header::before {
   display: flex;
   flex-direction: column;
   padding-top: 6px;
+  overflow: hidden;
 }
 
 .players_picture {
@@ -585,9 +578,7 @@ header::before {
   color: #8765dd;
 }
 
-.players_growth-description {
-  padding-bottom: 54px;
-}
+
 
 @media (min-width: 641px) {
   .players {
@@ -599,22 +590,28 @@ header::before {
     width: 409px;
     padding-left: 4vw;
   }
+
   .players_picture {
     position: absolute;
     top: 42px;
     left: 43%;
     margin: 0;
   }
+
   .players_description {
     width: 53vw;
     padding-left: 31px;
+  }
+
+  .growth_players {
+    padding-bottom: 30px;
   }
 
   .players_growth-description {
     width: 56vw;
     font-size: 19px;
     letter-spacing: 0.5px;
-    padding-bottom: 35px;
+
   }
 }
 
@@ -627,14 +624,15 @@ header::before {
     padding-left: 9.8%;
     width: 764px;
   }
+
   .players_picture {
     margin: 0;
     top: 20px;
     left: 38vw;
   }
+
   .players_description {
     padding-left: 9.8%;
-
     width: 39%;
   }
 
@@ -646,9 +644,12 @@ header::before {
     margin-top: 26px;
   }
 
+  .growth_players {
+    padding-bottom: 53px;
+  }
+
   .players_growth-description {
     font-size: 20px;
-    padding-bottom: 53px;
   }
 }
 
@@ -669,16 +670,25 @@ header::before {
   display: block;
 }
 
+.be_active-text,
+.find_contact-text,
+.work_it-text {
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 82px;
+}
+
+.work_it-text {
+  padding-bottom: 72px;
+}
+
 .also_title {
   font-size: 9vw;
-
-  margin-top: 28px;
   color: #e7e7e7;
 }
 
 .also_description {
   margin-top: 9px;
-  padding-bottom: 82px;
   line-height: 1.11em;
   font-size: 17px;
 }
@@ -687,19 +697,13 @@ header::before {
   padding-right: 13vw;
 }
 
-.be_active-text,
-.find_contact-text,
-.work_it-text {
-  position: relative;
-}
-
 .number {
   box-sizing: border-box;
   position: absolute;
   width: 70px;
   height: 70px;
   background-color: #5e42b0;
-  top: -86px;
+  top: -58px;
   left: 20px;
   display: flex;
   justify-content: center;
@@ -723,34 +727,38 @@ header::before {
   top: 45px;
 }
 
-.work_it-description {
-  padding-bottom: 72px;
-}
-
 @media (min-width: 641px) {
+
+  .also-text {
+    padding-bottom: 98px;
+  }
+
+  .be_active-text {
+    padding-top: 63px;
+  }
+
   .also_title {
     padding-left: 25px;
     font-size: 80px;
-    /* line-height: 1em; */
   }
 
-  .be_active-title {
-    margin-top: 63px;
+  .find_contact-text {
+    padding-top: 54px;
+    padding-bottom: 105px;
   }
 
-  .find_contact-title {
-    margin-top: 54px;
+  .work_it-text {
+    padding-top: 64px;
+    padding-bottom: 115px;
   }
 
   .work_it-title {
-    margin-top: 64px;
     padding-left: 35px;
   }
 
   .also_description {
     padding-left: 32px;
     margin-top: 8px;
-    padding-bottom: 98px;
     line-height: 1.16em;
     font-size: 24px;
     letter-spacing: 1.2px;
@@ -761,12 +769,7 @@ header::before {
     width: 85.8vw;
   }
 
-  .find_contact-description {
-    padding-bottom: 105px;
-  }
-
   .work_it-description {
-    padding-bottom: 115px;
     padding-right: 6vw;
     margin-top: 2px;
   }
@@ -774,8 +777,8 @@ header::before {
   .number {
     width: 115px;
     height: 115px;
-    top: -148px;
-    left: 34px;
+    top: -83px;
+    left: 31px;
     align-items: start;
     padding-top: 42px;
     font-size: 24px;
@@ -788,11 +791,12 @@ header::before {
   }
 
   .work_it-number {
-    top: -153px;
+    top: -88px;
   }
 }
 
 @media (min-width: 961px) {
+
   .be_active,
   .find_contact,
   .work_it,
@@ -877,6 +881,12 @@ header::before {
   .also-text {
     align-self: center;
     margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .find_contact-text {
+    padding-bottom: 60px;
   }
 
   .also_title {
@@ -901,13 +911,21 @@ header::before {
   .work_it-number {
     width: 168px;
     height: 154px;
-    top: -24px;
     left: -84px;
     padding-top: 64px;
   }
 
+  .be_active-number {
+    top: -24px;
+  }
+
   .find_contact-number {
     left: 91%;
+    top: -13px;
+  }
+
+  .work_it-number {
+    top: -10px;
   }
 
   .be_active-number::after,
@@ -958,6 +976,7 @@ footer {
   color: white;
   padding-bottom: 84px;
 }
+
 footer::before {
   content: "";
   position: absolute;
@@ -983,7 +1002,6 @@ footer::before {
   width: 100%;
   height: 100%;
   background-color: #50329c;
-
   border-radius: 18%;
   display: flex;
   justify-content: center;
@@ -1002,8 +1020,6 @@ footer::before {
   font-family: OpenSans;
   font-weight: 600;
   font-style: normal;
-
-  /* line-height: 1.23em; */
   text-transform: uppercase;
   text-align: center;
 
@@ -1025,10 +1041,12 @@ footer::before {
 .footer_download {
   margin: 74px auto 80px;
 }
+
 .footer_download-item {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+
 .logo_text-footer {
   padding-top: 0;
 }
@@ -1059,6 +1077,7 @@ footer::before {
 
     width: 94vw;
   }
+
   .footer_text-first-row {
     font-size: 10vw;
     letter-spacing: 6px;
@@ -1093,10 +1112,6 @@ footer::before {
   .footer_download-item:nth-child(2) {
     padding-left: 50px;
   }
-
-  /* .logo_text-footer {
-    padding-bottom: 20px;
-  } */
 }
 
 @media (min-width: 961px) {
